@@ -22,14 +22,14 @@
 
   <meta name="description" content="JavaScript 3D library for NexT  Installation  If you want to use the CDN instead of clone this repo, please jump to the Step 3.  Step 1 &rarr; Go to NexT dir  Change dir to NexT directory. There must">
 <meta property="og:type" content="website">
-<meta property="og:title" content="梦">
-<meta property="og:url" content="http://example.com/lib/three/README.html">
-<meta property="og:site_name" content="梦">
+<meta property="og:title" content="GGBond&#39;s Blog">
+<meta property="og:url" content="http://example.com/lib/three/README">
+<meta property="og:site_name" content="GGBond&#39;s Blog">
 <meta property="og:description" content="JavaScript 3D library for NexT  Installation  If you want to use the CDN instead of clone this repo, please jump to the Step 3.  Step 1 &rarr; Go to NexT dir  Change dir to NexT directory. There must">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-10T11:08:33.511Z">
 <meta property="article:modified_time" content="2025-05-10T11:08:33.511Z">
-<meta property="article:author" content="Zhuwg">
+<meta property="article:author" content="GGBond">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/lib/three/README">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title> | 梦
+  <title> | GGBond's Blog
 </title>
   
 
@@ -97,7 +97,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">梦</h1>
+      <h1 class="site-title">GGBond's Blog</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -200,24 +200,24 @@
 <h2 align="center">Step 1 &rarr; Go to NexT dir</h2>
 
 <p>Change dir to <strong>NexT</strong> directory. There must be <code>layout</code>, <code>source</code>, <code>languages</code> and other directories:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ <span class="built_in">ls</span></span><br><span class="line">_config.yml  crowdin.yml  docs  gulpfile.js  languages  layout  LICENSE.md  package.json  README.md  scripts  <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ <span class="hljs-built_in">cd</span> themes/next<br>$ <span class="hljs-built_in">ls</span><br>_config.yml  crowdin.yml  docs  gulpfile.js  languages  layout  LICENSE.md  package.json  README.md  scripts  <span class="hljs-built_in">source</span><br></code></pre></td></tr></table></figure>
 
 <h2 align="center">Step 2 &rarr; Get module</h2>
 
 <p>Install module to <code>source/lib</code> directory:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-three <span class="built_in">source</span>/lib/three</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ git <span class="hljs-built_in">clone</span> https://github.com/theme-next/theme-next-three <span class="hljs-built_in">source</span>/lib/three<br></code></pre></td></tr></table></figure>
 
 <h2 align="center">Step 3 &rarr; Set it up</h2>
 
 <p>Enable module in <strong>NexT</strong> <code>_config.yml</code> file:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">three_waves:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">OR</span></span><br><span class="line"><span class="attr">canvas_lines:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">OR</span></span><br><span class="line"><span class="attr">canvas_sphere:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">three_waves:</span> <span class="hljs-literal">true</span><br><span class="hljs-string">OR</span><br><span class="hljs-attr">canvas_lines:</span> <span class="hljs-literal">true</span><br><span class="hljs-string">OR</span><br><span class="hljs-attr">canvas_sphere:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
 <p><strong>And, if you wants to use the CDN, then need to set:</strong></p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="attr">three:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js</span></span><br><span class="line">  <span class="attr">three_waves:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/three-waves.min.js</span></span><br><span class="line">  <span class="attr">canvas_lines:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/canvas_lines.min.js</span></span><br><span class="line">  <span class="attr">canvas_sphere:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/canvas_sphere.min.js</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">vendors:</span><br>  <span class="hljs-string">...</span><br>  <span class="hljs-attr">three:</span> <span class="hljs-string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js</span><br>  <span class="hljs-attr">three_waves:</span> <span class="hljs-string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/three-waves.min.js</span><br>  <span class="hljs-attr">canvas_lines:</span> <span class="hljs-string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/canvas_lines.min.js</span><br>  <span class="hljs-attr">canvas_sphere:</span> <span class="hljs-string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@latest/canvas_sphere.min.js</span><br></code></pre></td></tr></table></figure>
 
 <h1 align="center">Update</h1>
 
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next/source/lib/three</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ <span class="hljs-built_in">cd</span> themes/next/source/lib/three<br>$ git pull<br></code></pre></td></tr></table></figure>
 
       </div>
       
@@ -292,10 +292,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Zhuwg"
+    <img class="site-author-image" itemprop="image" alt="GGBond"
       src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">Zhuwg</p>
-  <div class="site-description" itemprop="description">选择有时候比努力更重要</div>
+  <p class="site-author-name" itemprop="name">GGBond</p>
+  <div class="site-description" itemprop="description">人生是一段持续追寻方向的旅途。</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -340,7 +340,19 @@
   <span class="with-love">
     <i class=""></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Zhuwg</span>
+  <span class="author" itemprop="copyrightHolder">GGBond</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">7k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">6 分钟</span>
 </div>
 
 
